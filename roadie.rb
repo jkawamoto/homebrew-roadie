@@ -10,14 +10,14 @@
 class Roadie < Formula
   desc "A easy way to run your programs on Google Cloud Platform."
   homepage "https://github.com/jkawamoto/roadie"
-  version "0.2.6"
+  version "0.2.7"
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/jkawamoto/roadie/releases/download/v0.2.6/roadie_0.2.6_darwin_amd64.zip"
-    sha256 "ae0601c9908b92c30a3a2b799fe58d29766ea579d2ecefb1752932ef99b12cca"
+    url "https://github.com/jkawamoto/roadie/releases/download/v0.2.7/roadie_0.2.7_darwin_amd64.zip"
+    sha256 "4e69658705feec50c7012f075cbe9dc6d10acab5745af6fb0cd4407d864dd3f9"
   else
-    url "https://github.com/jkawamoto/roadie/releases/download/v0.2.6/roadie_0.2.6_darwin_386.zip"
-    sha256 "bbf59380aa06bdd9888765e776ae6cbcc4fc1000c50d16bb6dd201aa779c1e65"
+    url "https://github.com/jkawamoto/roadie/releases/download/v0.2.7/roadie_0.2.7_darwin_386.zip"
+    sha256 "405712508c870e6e7bbfc7b0f47734df2eedb189503a7bc9934ab0a3abd110bb"
   end
 
   def install
