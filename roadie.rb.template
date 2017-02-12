@@ -1,7 +1,7 @@
 #
 # assets/formula.go
 #
-# Copyright (c) 2016 Junpei Kawamoto
+# Copyright (c) 2016-2017 Junpei Kawamoto
 #
 # This software is released under the MIT License.
 #
@@ -20,7 +20,10 @@ class Roadie < Formula
     sha256 "{{.Hash386}}"
   end
 
+  system "brew tap caskroom/cask"
+
   def install
+    system "brew cask install google-cloud-sdk" => :run
     bin.install "roadie"
   end
 
