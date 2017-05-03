@@ -10,14 +10,14 @@
 class Roadie < Formula
   desc "A easy way to run your programs on Google Cloud Platform."
   homepage "https://github.com/jkawamoto/roadie"
-  version "0.3.6"
+  version "0.3.7"
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.6/roadie_0.3.6_darwin_amd64.zip"
-    sha256 "77e99a9de6308c8d7eaf6f16c40a47ba2f8f7294b6e63e3345b90bba43e6060b"
+    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.7/roadie_0.3.7_darwin_amd64.zip"
+    sha256 "6bee310a8f25a2199f80bbd24cf070abdb2dfecdea757ca0affcaa7071f7e958"
   else
-    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.6/roadie_0.3.6_darwin_386.zip"
-    sha256 "a55d789dc92172c93c0614957bc2ee5d5412c42b56d8d8d85e8b7bbf1a1109f7"
+    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.7/roadie_0.3.7_darwin_386.zip"
+    sha256 "310b28cc5a01d2ff63ec14f47bc67147078082b13790e3779dcc67656043e558"
   end
 
   system "brew tap caskroom/cask"
