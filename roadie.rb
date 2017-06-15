@@ -1,11 +1,22 @@
 #
-# assets/formula.go
+# roadie.rb
 #
 # Copyright (c) 2016-2017 Junpei Kawamoto
 #
-# This software is released under the MIT License.
+# This file is part of Roadie.
 #
-# http://opensource.org/licenses/mit-license.php
+# Roadie is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Roadie is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Roadie.  If not, see <http://www.gnu.org/licenses/>.
 #
 class Roadie < Formula
   desc "A easy way to run your programs on Google Cloud Platform."
@@ -20,10 +31,7 @@ class Roadie < Formula
     sha256 "fbdc644bb10f3fbdae61868b90afe9aced424bf6d096cc6e07118fa750704035"
   end
 
-  system "brew tap caskroom/cask"
-
   def install
-    system "brew cask install google-cloud-sdk" => :run
     bin.install "roadie"
   end
 
