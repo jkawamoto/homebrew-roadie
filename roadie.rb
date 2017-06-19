@@ -1,8 +1,6 @@
 #
 # roadie.rb
 #
-# Copyright (c) 2016-2017 Junpei Kawamoto
-#
 # This file is part of Roadie.
 #
 # Roadie is free software: you can redistribute it and/or modify
@@ -21,14 +19,14 @@
 class Roadie < Formula
   desc "A easy way to run your programs on Google Cloud Platform."
   homepage "https://github.com/jkawamoto/roadie"
-  version "0.3.9"
+  version "0.3.10"
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.9/roadie_0.3.9_darwin_amd64.zip"
-    sha256 "f9cdad021299bdb2f84ef257c6a7918c28a2551581af0b6d5dfddd645c00c7d7"
+    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.10/roadie_0.3.10_darwin_amd64.zip"
+    sha256 "c388c6dbc7433c655b01f59c01142ac7a56e4d1a2c656a60e0e0c615208c587b"
   else
-    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.9/roadie_0.3.9_darwin_386.zip"
-    sha256 "fbdc644bb10f3fbdae61868b90afe9aced424bf6d096cc6e07118fa750704035"
+    url "https://github.com/jkawamoto/roadie/releases/download/v0.3.10/roadie_0.3.10_darwin_386.zip"
+    sha256 "606342f6e29162162ecd1b3183ab33a5e09ddce46513b035315c77b23474c189"
   end
 
   def install
