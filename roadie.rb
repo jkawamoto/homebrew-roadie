@@ -20,18 +20,18 @@ require 'rbconfig'
 class Roadie < Formula
   desc "A easy way to run your programs on Google Cloud Platform."
   homepage "https://github.com/jkawamoto/roadie"
-  version "0.3.12"
+  version "0.3.13"
 
   if Hardware::CPU.is_64_bit?
     case RbConfig::CONFIG['host_os']
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.12/roadie_0.3.12_darwin_amd64.zip"
-      sha256 "312e57ea73bd89d5edcea0be63c522b94f4f3c68c8d104c5cdb7c4fd3bd5112a"
+      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.13/roadie_0.3.13_darwin_amd64.zip"
+      sha256 "867fb542ec3a4f0c1cb27f48dd6bf6bde7b0790f1a2a5860915558dd8b429c34"
     when /linux/
-      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.12/roadie_0.3.12_linux_amd64.tar.gz"
-      sha256 "f87cea212b9998953b9e5cef5f26f62fcb053072d5f76af2b3820ae2a9c8cfa1"
+      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.13/roadie_0.3.13_linux_amd64.tar.gz"
+      sha256 "9812257ccb253096f3cba4ad5c72a3894f8fc0cafb29cebe128363ff93b104d4"
     when /solaris|bsd/
       :unix
     else
@@ -42,11 +42,11 @@ class Roadie < Formula
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.12/roadie_0.3.12_darwin_386.zip"
-      sha256 "e411795e0d9b4e822ec7607144275c7cd5c79750f07ce603de6c84a353c5aecf"
+      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.13/roadie_0.3.13_darwin_386.zip"
+      sha256 "d00087073f8af769ad1b7ac7fd1630eddf1a69a0f89e184184e0927676523f42"
     when /linux/
-      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.12/roadie_0.3.12_linux_386.tar.gz"
-      sha256 "18ade1dab23a4f485d11090ddb22b545cb8a861ed8cf55a9f09ced78039f61a6"
+      url "https://github.com/jkawamoto/roadie/releases/download/v0.3.13/roadie_0.3.13_linux_386.tar.gz"
+      sha256 "7bdeb4e2da8c502f2dac2ed2d3c9a3230107e962d5265fbb0adeb5bc7041b3a8"
     when /solaris|bsd/
       :unix
     else
